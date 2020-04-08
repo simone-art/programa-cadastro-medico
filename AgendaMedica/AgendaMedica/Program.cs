@@ -39,21 +39,37 @@ namespace AgendaMedica
                         Console.ReadLine();
                         MensagemConfirmacao();
                         break;
+                        
+                       case 2:
+                        Console.WriteLine("Cardiología");
+                        Console.ReadLine();
+                        Console.WriteLine("Ginecología");
+                        Console.ReadLine();
+                        Console.WriteLine("Odontología");
+                        Console.ReadLine();
+                        Console.WriteLine("Psicología");
+                        Console.ReadLine();
+                        Console.WriteLine("Psiquiatría");
+                        Console.ReadLine();
+                        break;
+
                 }
                 Console.Clear();
+
+
             }
 
             static void MensagemConfirmacao()
             {
                 if (CodigoUsuario == 1234)
                 {
-                    Console.WriteLine("true!");
+                    Console.WriteLine("Cadastro foi feito com sucesso!");
                     Console.ReadLine();
 
                 } 
                 else
                 {
-                    Console.WriteLine("false!");
+                    Console.WriteLine("Cadastro foi feito com sucesso!");
                     Console.ReadLine();
                 }
             }
