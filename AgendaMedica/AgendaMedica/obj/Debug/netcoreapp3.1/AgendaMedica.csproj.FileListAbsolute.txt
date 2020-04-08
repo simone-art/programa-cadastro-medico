@@ -1,0 +1,13 @@
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.exe
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.deps.json
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.runtimeconfig.json
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.runtimeconfig.dev.json
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.dll
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\bin\Debug\netcoreapp3.1\AgendaMedica.pdb
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.AssemblyInfo.cs
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.dll
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.pdb
+C:\Users\USER\Desktop\Csharp\consulta-medica\programa-cadastro-medico\AgendaMedica\AgendaMedica\obj\Debug\netcoreapp3.1\AgendaMedica.genruntimeconfig.cache
