@@ -14,7 +14,15 @@ namespace AgendaMedica
 
         public string Email { get; set; }
 
-        //public int CodigoUsuario { get; set; }
+        public int CodigoUsuario { get; set; }
+
+        public static string Especialidades { get; private set; }
+        public static int Cardiología { get; private set; }
+        public string Confirmar { get; set; }
+        public static int Ginecología { get; private set; }
+        public static int Odontología { get; private set; }
+        public static int Psicología { get; private set; }
+        public static int Psiquiatría { get; private set; }
 
         public void SalvarDadosUsuario()
         {

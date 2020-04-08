@@ -5,6 +5,10 @@ namespace AgendaMedica
     class Program
     {
         public static int CodigoUsuario { get; private set; }
+        public static object Especialidades { get; private set; }
+        public static object Cardiología { get; private set; }
+        public static object Ginecología { get; private set; }
+        public static object Confirmar { get; private set; }
 
         static void Main(string[] args)
         {
@@ -39,18 +43,25 @@ namespace AgendaMedica
                         Console.ReadLine();
                         MensagemConfirmacao();
                         break;
-                        
-                       case 2:
-                        Console.WriteLine("Cardiología");
-                        Console.ReadLine();
-                        Console.WriteLine("Ginecología");
-                        Console.ReadLine();
-                        Console.WriteLine("Odontología");
-                        Console.ReadLine();
-                        Console.WriteLine("Psicología");
-                        Console.ReadLine();
-                        Console.WriteLine("Psiquiatría");
-                        Console.ReadLine();
+
+                    case 2:
+                       
+                        //Console.WriteLine("* Cardiología  Digite 1");
+                        //Console.ReadLine();
+                        //Console.Clear();
+                        //Console.WriteLine("* Ginecología Digite 2");
+                        //Console.ReadLine();
+                        //Console.Clear();
+                        //Console.WriteLine("* Odontología Digite 3");
+                        //Console.ReadLine();
+                        //Console.Clear();
+                        //Console.WriteLine("* Psicología Digite 4");
+                        //Console.ReadLine();
+                        //Console.Clear();
+                        //Console.WriteLine("* Psiquiatría Digite 5");
+                        //Console.ReadLine();
+                        //Console.Clear();
+                        EscolherEspecialidade();
                         break;
 
                 }
@@ -66,13 +77,58 @@ namespace AgendaMedica
                     Console.WriteLine("Cadastro foi feito com sucesso!");
                     Console.ReadLine();
 
-                } 
+                }
                 else
                 {
                     Console.WriteLine("Cadastro foi feito com sucesso!");
                     Console.ReadLine();
                 }
+
             }
         }
-    }
-}
+
+        private static void EscolherEspecialidade()
+
+        {
+
+            Console.WriteLine("* Cardiología  Digite 1");
+            Console.ReadLine();
+            Console.Clear();
+
+            if (Program.Especialidades == Cardiología)
+            {
+                Console.WriteLine("Voçê escolheu Cardiología. Digite Confirmar!");
+                Console.ReadLine();
+                Console.Clear();
+            }
+
+            if (Program.Cardiología == Confirmar)
+            {
+                Console.WriteLine("Confirmada Consulta Cardiología");
+                Console.ReadLine();
+                Console.Clear();
+            }
+
+            Console.WriteLine("* Ginecología Digite 2");
+            Console.ReadLine();
+            Console.Clear();
+
+            if (Program.Especialidades == Ginecología)
+            {
+                Console.WriteLine("Voçê escolheu Ginecología. Digite Confirmar!");
+                Console.ReadLine();
+
+
+
+            }
+
+            if (Program.Ginecología == Confirmar)
+            {
+                Console.WriteLine("Confirmada Escolha Ginecología");
+                Console.ReadLine();
+                Console.Clear();
+            }
+
+           
+        }
+    }   }
