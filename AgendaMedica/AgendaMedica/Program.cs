@@ -4,6 +4,8 @@ namespace AgendaMedica
 {
     class Program
     {
+        public static int CodigoUsuario { get; private set; }
+
         static void Main(string[] args)
         {
             Console.WriteLine("=================================================================");
@@ -22,32 +24,39 @@ namespace AgendaMedica
                 if (opcoes == 4) break;
                 Console.Clear();
 
-                switch(opcoes)
+                switch (opcoes)
                 {
-                    case 1: 
-                Console.WriteLine("Cadastre o seu nome");
-                Console.ReadLine();
-                Console.WriteLine("Cadastre o seu sobrenome");
-                Console.ReadLine();
-                Console.WriteLine("Cadastre o seu CPF");
-                Console.ReadLine();
-                Console.WriteLine("Cadastre o seu email");
-                Console.ReadLine();
-                Console.WriteLine("Ingrese o código que voçê recebeu via email");
-                Console.ReadLine();
-               // MensagemConfirmacao();
+                    case 1:
+                        Console.WriteLine("Cadastre o seu nome");
+                        Console.ReadLine();
+                        Console.WriteLine("Cadastre o seu sobrenome");
+                        Console.ReadLine();
+                        Console.WriteLine("Cadastre o seu CPF");
+                        Console.ReadLine();
+                        Console.WriteLine("Cadastre o seu email");
+                        Console.ReadLine();
+                        Console.WriteLine("Ingrese o código que voçê recebeu via email");
+                        Console.ReadLine();
+                        MensagemConfirmacao();
                         break;
                 }
                 Console.Clear();
             }
 
-            //static void MensagemConfirmacao()
-            //{
-                //if (CodigoUsuario == 1234)
-                //{
-                   // Console.WriteLine("Cadastro feito com sucesso!");
+            static void MensagemConfirmacao()
+            {
+                if (CodigoUsuario == 1234)
+                {
+                    Console.WriteLine("true!");
+                    Console.ReadLine();
 
-                //}
+                } 
+                else
+                {
+                    Console.WriteLine("false!");
+                    Console.ReadLine();
+                }
             }
         }
     }
+}
