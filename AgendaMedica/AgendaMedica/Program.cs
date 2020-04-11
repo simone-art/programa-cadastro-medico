@@ -37,11 +37,16 @@ namespace AgendaMedica
                         usuario.Email= Console.ReadLine();
                         Console.WriteLine("Ingrese o código que voçê recebeu via email");
                         usuario.CodigoUsuario = Convert.ToInt16(Console.ReadLine());
-                        var returno = usuario.SalvarDadosUsuario();
-                        MensagemConfirmacao(returno);
+                        var retorno = usuario.SalvarDadosUsuario();
+                        MensagemConfirmacao(retorno);
+                        Console.ReadLine();
                         break;
 
                     case 2:
+                        Console.WriteLine("* Cardiología  Digite 1");
+                        Console.ReadLine();
+                        Console.WriteLine("* Oftalmología Digite 2");
+                        Console.ReadLine();
                         EscolherEspecialidade();
                         break;
 
@@ -68,28 +73,43 @@ namespace AgendaMedica
             }
         }
 
+        private int Cardiología = 1;
+
+        public int Especialidades
+        {
+            get
+            {
+                return Cardiología;
+            }
+            set
+            {
+                if (value == 1) return;
+
+            Console.WriteLine("* A sua consulta foi confirmada para Cardiología");
+            Console.ReadLine();
+            }
+        }
+
         public static void EscolherEspecialidade()
 
         {
+            Consulta _especialidade = new Consulta();
+            _especialidade.Cardiología = 1;
+            _especialidade.Oftalmología = 2;
 
-            Console.WriteLine("* Cardiología  Digite 1");
-            Console.ReadLine();
-            Console.Clear();
-
-            //var consulta = new Consulta();
-            //consulta.Cardiología = 1;
-            //Console.WriteLine("*Cardiología");
-
-            /*if (consulta.Cardiología == 1)
+            if(_especialidade.Cardiología == 1)
             {
-                Console.WriteLine("Voçê escolheu cardiología. Digite 1 para confirmar");
-            }*/
-            
-            
+                
+                
+            }
 
+            if(_especialidade.Oftalmología == 2)
+            {
+                Console.WriteLine("* A sua consulta foi confirmada para Oftalmología");
+                Console.ReadLine();
+                
+            }
 
-
-            
         }
     }
 }

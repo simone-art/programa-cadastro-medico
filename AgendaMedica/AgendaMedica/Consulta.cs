@@ -18,17 +18,22 @@ namespace AgendaMedica
 
         public int Especialidades { get; set; }
         public int Cardiología { get; set; }
-       
+
+        public int Oftalmología { get; set; }
+
         public string Confirmar { get; set; }
+
+      
+
         public int IdConsulta { get; set; }
 
         public int SalvarDadosUsuario()
         {
-            Random random = new Random();
-            this.IdConsulta = random.Next();
-            Consulta.consultas.Add(this);
+        Random random = new Random();
+        this.IdConsulta = random.Next();
+        Consulta.consultas.Add(this);
 
-            return this.CodigoUsuario;
+        return this.CodigoUsuario;
         }
 
         public static List<Consulta> consultas = new List<Consulta>();
