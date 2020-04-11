@@ -16,17 +16,19 @@ namespace AgendaMedica
 
         public int CodigoUsuario { get; set; }
 
-        public static string Especialidades { get; private set; }
-        public static int Cardiología { get; private set; }
+        public int Especialidades { get; set; }
+        public int Cardiología { get; set; }
+       
         public string Confirmar { get; set; }
-        public static int Ginecología { get; private set; }
-        public static int Odontología { get; private set; }
-        public static int Psicología { get; private set; }
-        public static int Psiquiatría { get; private set; }
+        public int IdConsulta { get; set; }
 
-        public void SalvarDadosUsuario()
+        public int SalvarDadosUsuario()
         {
+            Random random = new Random();
+            this.IdConsulta = random.Next();
             Consulta.consultas.Add(this);
+
+            return this.CodigoUsuario;
         }
 
         public static List<Consulta> consultas = new List<Consulta>();

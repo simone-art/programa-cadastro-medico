@@ -4,11 +4,6 @@ namespace AgendaMedica
 {
     class Program
     {
-        public static int CodigoUsuario { get; private set; }
-        public static object Especialidades { get; private set; }
-        public static object Cardiología { get; private set; }
-        public static object Ginecología { get; private set; }
-        public static object Confirmar { get; private set; }
 
         static void Main(string[] args)
         {
@@ -32,35 +27,21 @@ namespace AgendaMedica
                 {
                     case 1:
                         Console.WriteLine("Cadastre o seu nome");
-                        Console.ReadLine();
+                        var usuario = new Consulta();
+                        usuario.Nome = Console.ReadLine();
                         Console.WriteLine("Cadastre o seu sobrenome");
-                        Console.ReadLine();
+                        usuario.Sobrenome = Console.ReadLine();
                         Console.WriteLine("Cadastre o seu CPF");
-                        Console.ReadLine();
+                        usuario.CPF = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Cadastre o seu email");
-                        Console.ReadLine();
+                        usuario.Email= Console.ReadLine();
                         Console.WriteLine("Ingrese o código que voçê recebeu via email");
-                        Console.ReadLine();
-                        MensagemConfirmacao();
+                        usuario.CodigoUsuario = Convert.ToInt16(Console.ReadLine());
+                        var returno = usuario.SalvarDadosUsuario();
+                        MensagemConfirmacao(returno);
                         break;
 
                     case 2:
-                       
-                        //Console.WriteLine("* Cardiología  Digite 1");
-                        //Console.ReadLine();
-                        //Console.Clear();
-                        //Console.WriteLine("* Ginecología Digite 2");
-                        //Console.ReadLine();
-                        //Console.Clear();
-                        //Console.WriteLine("* Odontología Digite 3");
-                        //Console.ReadLine();
-                        //Console.Clear();
-                        //Console.WriteLine("* Psicología Digite 4");
-                        //Console.ReadLine();
-                        //Console.Clear();
-                        //Console.WriteLine("* Psiquiatría Digite 5");
-                        //Console.ReadLine();
-                        //Console.Clear();
                         EscolherEspecialidade();
                         break;
 
@@ -70,24 +51,24 @@ namespace AgendaMedica
 
             }
 
-            static void MensagemConfirmacao()
+            static void MensagemConfirmacao(int CodigoUsuarioMedico)
             {
-                if (CodigoUsuario == 1234)
+                if (CodigoUsuarioMedico == 1234)
                 {
-                    Console.WriteLine("Cadastro foi feito com sucesso!");
+                    Console.WriteLine("Cadastro  foi feito com sucesso!");
                     Console.ReadLine();
 
                 }
                 else
                 {
-                    Console.WriteLine("Cadastro foi feito com sucesso!");
+                    Console.WriteLine("Cadastro não foi feito com sucesso!");
                     Console.ReadLine();
                 }
 
             }
         }
 
-        private static void EscolherEspecialidade()
+        public static void EscolherEspecialidade()
 
         {
 
@@ -95,40 +76,20 @@ namespace AgendaMedica
             Console.ReadLine();
             Console.Clear();
 
-            if (Program.Especialidades == Cardiología)
+            //var consulta = new Consulta();
+            //consulta.Cardiología = 1;
+            //Console.WriteLine("*Cardiología");
+
+            /*if (consulta.Cardiología == 1)
             {
-                Console.WriteLine("Voçê escolheu Cardiología. Digite Confirmar!");
-                Console.ReadLine();
-                Console.Clear();
-            }
-
-            if (Program.Cardiología == Confirmar)
-            {
-                Console.WriteLine("Confirmada Consulta Cardiología");
-                Console.ReadLine();
-                Console.Clear();
-            }
-
-            Console.WriteLine("* Ginecología Digite 2");
-            Console.ReadLine();
-            Console.Clear();
-
-            if (Program.Especialidades == Ginecología)
-            {
-                Console.WriteLine("Voçê escolheu Ginecología. Digite Confirmar!");
-                Console.ReadLine();
+                Console.WriteLine("Voçê escolheu cardiología. Digite 1 para confirmar");
+            }*/
+            
+            
 
 
 
-            }
-
-            if (Program.Ginecología == Confirmar)
-            {
-                Console.WriteLine("Confirmada Escolha Ginecología");
-                Console.ReadLine();
-                Console.Clear();
-            }
-
-           
+            
         }
-    }   }
+    }
+}
