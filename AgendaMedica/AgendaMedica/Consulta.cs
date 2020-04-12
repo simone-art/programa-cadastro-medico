@@ -17,13 +17,18 @@ namespace AgendaMedica
         public int CodigoUsuario { get; set; }
 
         public int Especialidades { get; set; }
-        public int Cardiología { get; set; }
+        public string Cardiología { get; set; }
 
-        public int Oftalmología { get; set; }
+        public string Ginecología { get; set; }
+
+        public string Oftalmología { get; set; }
+
+        public string Psicología{ get; set; }
+
+        public string Psiquiatría { get; set; }
 
         public string Confirmar { get; set; }
 
-      
 
         public int IdConsulta { get; set; }
 
